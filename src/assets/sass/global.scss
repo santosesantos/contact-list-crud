@@ -1,0 +1,15 @@
+* {
+	// font-family: $fonte-principal;
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	min-height: 100%;
+}
+
+body {
+	height: 100vh;
+
+	background-color: $primary-bg-color;
+}

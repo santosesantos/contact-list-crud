@@ -1,0 +1,19 @@
+footer div.footer-bar {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+
+	position: fixed;
+	bottom: 0;
+
+	width: 100%;
+	height: fit-content;
+
+	padding: 12px;
+
+	font-size: 1.2em;
+	color: $color-white;
+
+	background-color: darkorange;
+}
