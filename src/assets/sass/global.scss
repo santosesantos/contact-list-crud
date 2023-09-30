@@ -1,7 +1,12 @@
 * {
-	// font-family: $fonte-principal;
+	font-family: $main-font;
 	padding: 0;
 	margin: 0;
+	text-decoration: none;
+
+	::selection {
+		background-color: $primary-color;
+	}
 }
 
 html {
@@ -12,4 +17,41 @@ body {
 	height: 100vh;
 
 	background-color: $primary-bg-color;
+	
+	main {
+		height: max-content;
+
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+		padding: 4rem;
+	}
+
+	a {
+		color: $link-color;
+
+		&:hover {
+			color: $link-color-hover;
+		}
+
+		&:active {
+			color: $color-white-secondary;
+		}
+	}
+}
+
+.main-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	gap: 1em;
+
+	padding: 2rem;
+
+	background-color: #FFFFFF;
+	border-radius: 16px;
 }

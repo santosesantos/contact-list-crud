@@ -1,0 +1,57 @@
+.main-container form {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+
+	gap: 1em;
+
+	font-size: 20px;
+
+	input {
+		border: 2px solid transparent;
+		border-radius: 6px;
+
+		padding: 4px;
+
+		font-size: 16px;
+		background-color: #E5E5E5;
+
+		&:hover {
+			border-color: $primary-color;
+		}
+		
+		&:focus {
+			border-color: $primary-color;
+			background-color: $input-bg-color;
+		}
+	}
+
+	button {
+		margin-top: .5em;
+
+		align-self: flex-end;
+
+		padding: 6px 14px;
+
+		font-size: 18px;
+		font-weight: 700;
+		color: $color-white;
+
+		border: none;
+		border-radius: 6px;
+
+		cursor: pointer;
+
+		background-color: $btn-primary-color;
+		
+		&:hover {
+			background-color: $btn-primary-color-hover;
+		}
+		
+		&:active {
+			box-shadow: inset 2px 2px 4px #6d4700;
+			background-color: $btn-primary-color-hover;
+		}
+	}
+}
