@@ -1,0 +1,35 @@
+.main-container table {
+	border: 1px solid $primary-color;
+	border-radius: 6px;
+
+	tr {
+		border-top: 1px solid $dark-bg-color;
+		border-bottom: 1px solid $dark-bg-color;
+	}
+
+	thead {
+		background-color: $primary-bg-color;
+
+		font-weight: 700;
+	}
+
+	td {
+		width: 10vw;
+
+		padding: 6px;
+	}
+
+	tbody {
+		tr {
+			cursor: pointer;
+	
+			&:hover {
+				background-color: $tbody-bg-color-hover;
+			}
+			
+			&:active {
+				background-color: $tbody-bg-color-active;
+			}
+		}
+	}
+}

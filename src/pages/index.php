@@ -11,7 +11,40 @@
 		<?php include_once "./header.php" ?>
 	</header>
 	<main>
-		<h1>Hello there!!!</h1>
+		<div class="main-container">
+			<h1>Contacts</h1>
+			<table>
+				<thead>
+					<tr>
+						<td>Name</td>
+						<td>E-mail</td>
+					</tr>
+				</thead>
+				<tbody>
+					<?php
+						require_once "../includes/functions.inc.php";
+
+						$contacts = getContacts();
+
+						while ($row = mysqli_fetch_assoc($contacts)) {
+							?> <tr>
+								<td>
+									<?php
+										echo $row["name"];
+									?>
+								</td>
+								<td>
+									<?php
+										echo $row["email"];
+									?>
+								</td>
+							</tr>
+							<?php
+						}
+					?>
+				</tbody>
+			</table>
+		</div>
 	</main>
 	<footer>
 		<?php include_once "./footer.php" ?>
