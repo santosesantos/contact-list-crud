@@ -18,12 +18,11 @@ const processSass = () => {
 
 const processJS = callback => {
 	gulp.src("src/assets/js/**/*.js")
-		.pipe(babel({
-			comments: false,
-			presets: ["env"]
-		}))
-		.pipe(uglify())
-		.pipe(concat("app.min.js"))
+		// .pipe(babel({
+		// 	comments: false,
+		// 	presets: ["env"]
+		// }))
+		// .pipe(uglify())
 		.pipe(gulp.dest("build/assets/js"));
 
 	return callback();

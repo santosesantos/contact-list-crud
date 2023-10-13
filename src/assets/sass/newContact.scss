@@ -17,6 +17,8 @@
 		font-size: 16px;
 		background-color: #E5E5E5;
 
+		outline: none;
+
 		&:hover {
 			border-color: $primary-color;
 		}
@@ -24,6 +26,19 @@
 		&:focus {
 			border-color: $primary-color;
 			background-color: $input-bg-color;
+		}
+	}
+
+	input:read-only {
+		cursor: default;
+
+		&:hover {
+			border-color: transparent;
+		}
+		
+		&:focus {
+			border-color: transparent;
+			background-color: #E5E5E5;
 		}
 	}
 
@@ -52,6 +67,28 @@
 		&:active {
 			box-shadow: inset 2px 2px 4px #6d4700;
 			background-color: $btn-primary-color-hover;
+		}
+	}
+
+	.form-btns {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+		align-items: center;
+
+		gap: 1rem;
+
+		:first-child {
+			background-color: $btn-secondary-color;
+		
+			&:hover {
+				background-color: $btn-secondary-color-hover;
+			}
+			
+			&:active {
+				box-shadow: inset 2px 2px 4px #550000;
+				background-color: $btn-secondary-color-hover;
+			}
 		}
 	}
 }

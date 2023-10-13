@@ -27,7 +27,7 @@
 						$contacts = getContacts();
 
 						while ($row = mysqli_fetch_assoc($contacts)) {
-							?> <tr>
+							?> <tr id="<?php echo $row["id"] ?>" class="table-row">
 								<td>
 									<?php
 										echo $row["name"];
@@ -49,5 +49,7 @@
 	<footer>
 		<?php include_once "./footer.php" ?>
 	</footer>
+
+	<script src="../assets/js/indexPage.js"></script>
 </body>
 </html>
